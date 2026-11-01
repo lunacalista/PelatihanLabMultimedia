@@ -1,65 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id" class="scroll-smooth">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luna Calista Azalia Zahra || Portofolio</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lembar Kerja Praktik Tailwind CSS">
+  <title>Latihan Tailwind CSS: Portofolio Web</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+  @theme {
+    --color-navy: #2A2D6E;
+    --color-violet: #6B2F8F;
+    --color-hotpink: #D6368B;
+    --color-hotpink-dark: #B02A72;
+    --color-lilac: #E6B3F0;
+  }
+</style>
 </head>
-<body>
-    <header>
-        <a href="#home">Luna Calista Azalia Zahra</a>
-        <div class="navbar">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contacts</a>
+
+<body class="bg-navy text-white font-serif min-h-screen">
+  <header class="sticky top-0 z-50 bg-violet border-b">
+    <div class="max-w-[960px] min-h-[68px] mx-auto px-6 flex items-center justify-between flex-wrap gap-4">
+      <a href="#home" class="font-bold text-white">Luna Calista Azalia Zahra</a>
+      <div class="flex gap-6">
+        <a href="#about" class="font-bold text-white hover:text-lilac">About</a>
+        <a href="#skills" class="font-bold text-white hover:text-lilac">Skills</a>
+        <a href="#projects" class="font-bold text-white hover:text-lilac">Projects</a>
+        <a href="#contact" class="font-bold text-white hover:text-lilac">Contacts</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-[960px] mx-auto px-6">
+    <section id="home" class="py-10 sm:py-16 flex flex-col sm:flex-row items-start sm:items-center gap-8">
+      <img src="assets/twilight sparkle.jpg" alt="Me!" class="w-36 h-36 sm:w-44 sm:h-44 rounded-full object-cover shrink-0">
+      <div class="flex flex-col">
+        <p class="text-xs font-bold tracking-[0.08cm] text-white uppercase">Computer Engineering Student</p>
+        <h1 class="text-4xl sm:text-[2.6rem] font-bold text-white leading-tight mt-1 mb-2">Luna Calista Azalia Zahra</h1>
+        <p class="text-lg text-white">Interested in learning more about game development, content creation, and design.</p>
+      </div>
+    </section>
+
+    <hr class="border-hotpink">
+
+    <section id="about" class="py-12">
+      <p class="text-xs font-bold tracking-[0.08cm] uppercase text-lilac">Get to know me</p>
+      <h2 class="text-3xl font-bold mt-1 mb-4">About Me</h2>
+      <p class="leading-relaxed text-justify">Mahasiswa Teknik Komputer Institut Teknologi Sepuluh Nopember (ITS) dengan pengalaman praktis di
+        bidang hubungan masyarakat, pelayanan informasi, dan koordinasi lintas divisi melalui keterlibatan aktif sebagai staf Liaison
+        Officer dan Public Relations. Saat ini saya belajar pemrograman dengan C++, Python, HTML, CSS, dan Tailwind CSS, serta memiliki
+        kemampuan dasar Figma untuk desain interface. Didukung oleh minat yang berkembang dalam konten kreatif, termasuk penulisan dan
+        video editing. Seorang fast learner yang adaptif dan kolaboratif yang siap memberikan kontribusi nyata bagi tim maupun organisasi.</p>
+    </section>
+
+    <hr class="border-hotpink">
+
+    <section id="skills" class="py-12">
+      <p class="text-xs font-bold tracking-[0.08cm] uppercase text-lilac">What I work with</p>
+      <h2 class="text-3xl font-bold mt-1 mb-4">Skills</h2>
+      <div class="flex flex-wrap gap-3">
+        <span class="bg-hotpink text-white font-bold px-4 py-1 rounded-full">C++</span>
+        <span class="bg-hotpink text-white font-bold px-4 py-1 rounded-full">Python</span>
+        <span class="bg-hotpink text-white font-bold px-4 py-1 rounded-full">HTML</span>
+        <span class="bg-hotpink text-white font-bold px-4 py-1 rounded-full">Tailwind CSS</span>
+        <span class="bg-hotpink text-white font-bold px-4 py-1 rounded-full">Figma</span>
+      </div>
+    </section>
+
+    <hr class="border-hotpink">
+
+    <section id="projects" class="py-12">
+      <p class="text-xs font-bold tracking-[0.08cm] uppercase text-lilac">All that I've worked on</p>
+      <h2 class="text-3xl font-bold mt-1 mb-4">Projects</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="bg-violet rounded-lg p-6 shadow-md">
+          <p class="font-bold">Cosmic Clash (Game)</p>
         </div>
-        <hr>
-    </header>
-
-    <section id="home">
-        <img src="assets/ashveil.jpg" alt="MyMineGW" width="200px">
-        <p>Computer Engineering Student</p>
-        <h1>Luna Calista Azalia Zahra</h1>
-        <p>Interested in learning more about web development and design.</p>
-        <hr>
-    </section>
-
-    <section id="about">
-        <p>Get to know me</p>
-        <h2>About Me</h2>
-        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <hr>
-    </section>
-
-    <section id="skills">
-        <p>What I work with</p>
-        <h2>Skills</h2>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <hr>
-    </section>
-
-    <section id="projects">
-        <p>All that I've worked on</p>
-        <h2>Projects</h2>
-        <div>
-            <p>Project 1</p>
-            <p>Project 2</p>
-            <p>Project 3</p>
+        <div class="bg-violet rounded-lg p-6 shadow-md">
+          <p class="font-bold">Little Adventures (Game)</p>
         </div>
-        <hr>
+        <div class="bg-violet rounded-lg p-6 shadow-md">
+          <p class="font-bold">2EZ4U (App)</p>
+        </div>
+      </div>
     </section>
 
-    <section id="contact">
-        <p>Get in touch with me</p>
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:lunacalista@gmail.com">lunacalista@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/lunacalistaazaliazahra">Luna Calista Azalia Zahra</a></p>
-        <p>GitHub: <a href="https://github.com/lunacalista">lunacalista</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/lunacalizta">lunacalizta</a></p>
-        <hr>
+    <hr class="border-hotpink">
+
+     <section id="contact" class="py-12">
+      <p class="text-xs font-bold tracking-[0.08cm] uppercase text-lilac">Get in touch with me</p>
+      <h2 class="text-3xl font-bold mt-1 mb-4">Contact</h2>
+      <div class="flex flex-col items-start gap-3">
+        <a href="https://github.com/lunacalista"
+           class="bg-hotpink text-white font-bold underline text-center px-4 py-2 rounded-full hover:bg-hotpink-dark">lunacalista (GitHub)</a>
+        <a href="https://www.instagram.com/lunacalizta"
+           class="bg-hotpink text-white font-bold underline text-center px-4 py-2 rounded-full hover:bg-hotpink-dark">lunacalizta (Instagram)</a>
+        <a href="mailto:lunacalista@gmail.com"
+           class="bg-hotpink text-white font-bold underline text-center px-4 py-2 rounded-full hover:bg-hotpink-dark">lunacalista@gmail.com (Email)</a>
+        <a href="https://www.linkedin.com/in/lunacalistaazaliazahra"
+           class="bg-hotpink text-white font-bold underline text-center px-4 py-2 rounded-full hover:bg-hotpink-dark">Luna Calista Azalia Zahra (LinkedIn)</a>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
